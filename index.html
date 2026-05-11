@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chatbot Oficial | Hotel Costa Azul</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <main class="app">
+    <section class="panel">
+      <header class="cabecera">
+        <div>
+          <p class="etiqueta">Hotel Costa Azul</p>
+          <h1>Asistente de recepci&oacute;n</h1>
+          <p class="subtitulo">Atenci&oacute;n autom&aacute;tica para consultas antes, durante y despu&eacute;s de la estancia.</p>
+        </div>
+        <span class="fecha">15/01/2026</span>
+      </header>
+
+      <div class="estado">
+        <span class="punto"></span>
+        Marina, asistente virtual del hotel, est&aacute; disponible
+      </div>
+
+      <section id="chat" class="chat" aria-live="polite"></section>
+
+      <section class="chips" aria-label="Opciones r&aacute;pidas">
+        <button type="button" data-text="Servicios del hotel">Servicios del hotel</button>
+        <button type="button" data-text="Horarios">Horarios</button>
+        <button type="button" data-text="Habitaciones">Habitaciones</button>
+        <button type="button" data-text="Recomendaciones">Recomendaciones</button>
+        <button type="button" data-text="Hablar con recepci&oacute;n">Hablar con recepci&oacute;n</button>
+      </section>
+
+      <form id="formulario" class="entrada" autocomplete="off">
+        <label class="solo-lectura" for="mensaje">Escribe tu mensaje</label>
+        <input id="mensaje" name="mensaje" type="text" placeholder="Escribe aqu&iacute; tu consulta..." required>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <button id="borrar" class="borrar" type="button">Borrar conversaci&oacute;n</button>
+    </section>
+  </main>
+
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
